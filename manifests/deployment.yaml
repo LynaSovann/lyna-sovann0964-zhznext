@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: lyna-sovann0964-zhznext-container
-          image: pipejet/lyna-sovann0964-zhznext:0
+          image: pipejet/lyna-sovann0964-zhznext:1
           ports:
             - containerPort: 3000
