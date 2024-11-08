@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lyna-sovann0964-zhznext-deployment
+  labels:
+    app: lyna-sovann0964-zhznext
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lyna-sovann0964-zhznext
+  template:
+    metadata:
+      labels:
+        app: lyna-sovann0964-zhznext
+    spec:
+      containers:
+        - name: lyna-sovann0964-zhznext-container
+          image: pipejet/lyna-sovann0964-zhznext:0
+          ports:
+            - containerPort: 3000
