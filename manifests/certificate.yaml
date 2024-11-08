@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: lyna-sovann0964-zhznext-certificate
+  namespace: lyna-sovann0964-zhznext
+spec:
+  secretName: lyna-sovann0964-zhznext-secret-tls
+  commonName: lyna-sovann0964-zhznext.assessify.org
+  dnsNames:
+  - lyna-sovann0964-zhznext.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
